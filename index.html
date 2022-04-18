@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Mono:wght@200&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Top of the survey for webpage-->
+    
+    
+
+
+    <!--The section of the webpage where you enter stuff into the box-->
+    <form id="survey-form">
+
+            <div class="element" id="centered">
+                <h1 id="title">Hobby Survey</h1>
+                <p id="description">We know many people have a range of different hobbies and we would like to see which ones peak your interest. We appreciate each person who completes this survey.</p>
+            </div>
+
+        
+
+    <!--This is the name label-->
+            <div class="element">
+                <label for="name">Name</label><br>
+                <input type="text" id="name-label" name="name" required placeholder="Enter your name"><br>
+            </div>
+
+    <!--This is the Email label-->
+            <div class="element">
+                <label for="email">Email</label><br>
+                <input type="text" id="email-label" name="email" required placeholder="Enter a valid Email"><br>
+            </div>
+
+    <!--This is the Age label--> 
+            <div class="element">
+                <label for="age">Age</label><br>
+                <input type="number" id="number-label" name="age" required placeholder="Enter your age" min=1 max=100><br>
+            </div>
+
+            
+
+    <!-- This is the dropdown box section-->
+            <div class="element">
+                <label for="items">Choose a hobby that you might like to pick up.</label><br>
+                <select name="dropdown" id="dropdown" required>
+                    <option value="item1">Choose a hobby</option>
+                    <option value="item2">Surfing</option>
+                    <option value="item3">Running</option>
+                    <option value="item4">Weight Lifting</option>
+                    <option value="item5">Hiking</option>
+                    <option value="item6">Biking</option>
+                </select>
+                <br>
+            </div>
+            <div class="element">
+                <h2 >Would you like to receive potential info about us in the future?</h2> <br>
+            
+            
+                <input type="radio" id="definitely" name="referral" value="Definitely" required>
+                <label for="definitely">Definitely</label><br>
+            
+        
+            
+                <input type="radio" id="maybe" name="referral" value="Maybe">
+                <label for="maybe">Maybe</label><br>
+            
+
+            
+                <input type="radio" id="no" name="referral" value="No">
+                <label for="no">No</label><br>
+            </div>
+
+            <div class="element">
+                <h2>Check the hobbies that you are interested in.</h2><br>
+            
+            
+                <input type="checkbox" id="fencing" name="hobbies" value="Fencing" required>
+                <label for="fencing">Fencing</label><br>
+            
+
+            
+                <input type="checkbox" id="skateboarding" name="hobbies" value="skateboarding">
+                <label for="skateboarding">Skateboarding</label><br>
+            
+
+                <input type="checkbox" id="snowboarding" name="hobbies" value="snowboarding">
+                <label for="snowboarding">Snowboarding</label><br>
+
+                <input type="checkbox" id="coding name=" name="hobbies" value="snowboarding">
+                <label for="snowboarding">Coding</label><br>
+
+                <input type="checkbox" id="video games=" name="hobbies" value="snowboarding">
+                <label for="snowboarding">Video Games</label><br>
+
+                <input type="checkbox" id="painting=" name="hobbies" value="snowboarding">
+                <label for="snowboarding">Painting</label><br>
+
+                <input type="checkbox" id="drawing=" name="hobbies" value="snowboarding">
+                <label for="snowboarding">Drawing</label><br>
+            </div>
+
+            <div class="element" id="bottom">
+                <h2>Any comments or suggestions?</h2><br>
+                <textarea name="comment" form="survey-form"  placeholder="Enter comments here (optional)"></textarea><br>
+            
+            
+                <button>Submit</button>
+            </div>
+
+        
+        
+    </form>
+    
+</body>
+</html>
