@@ -5,11 +5,8 @@
     box-sizing: border-box;
 }
 
-#menu {
-    display: flex;
-    flex-direction: column;
     
-}
+
 
 
 header {
@@ -78,7 +75,7 @@ textarea {
 
 }
 
-#dropdown {
+#menu {
     width: 100%;
     height: 2rem;
 }
